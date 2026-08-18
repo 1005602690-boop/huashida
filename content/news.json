@@ -1,0 +1,52 @@
+{
+  "items": [
+    {
+      "cat": "new",
+      "date": "2026-07-20",
+      "title_zh": "华仕达新款全自动制袋机下线",
+      "title_en": "New Auto Bag Maker Rolled Out",
+      "summary_zh": "新一代制袋机投产，支持多规格快速切换，操作更简便。",
+      "summary_en": "New bag maker supports fast multi-spec switching, easier to run."
+    },
+    {
+      "cat": "trend",
+      "date": "2026-06-12",
+      "title_zh": "高周波工艺在新能源领域的应用",
+      "title_en": "HF Process in New Energy",
+      "summary_zh": "电池封装、隔热材料等场景对高周波焊接需求快速增长。",
+      "summary_en": "Growing HF welding demand in battery packaging & insulation."
+    },
+    {
+      "cat": "expo",
+      "date": "2026-05-08",
+      "title_zh": "华仕达将亮相华南机械展",
+      "title_en": "At S. China Machinery Expo",
+      "summary_zh": "现场演示多款高周波与超声波设备，欢迎预约洽谈。",
+      "summary_en": "Live demos of HF & ultrasonic machines — book a meeting."
+    },
+    {
+      "cat": "company",
+      "date": "2026-04-15",
+      "title_zh": "模具定制中心升级投产",
+      "title_en": "Tooling Center Upgraded",
+      "summary_zh": "新增加工设备，模具定制交期进一步缩短。",
+      "summary_en": "New machining gear shortens custom mold lead time."
+    },
+    {
+      "cat": "trend",
+      "date": "2026-03-22",
+      "title_zh": "超声波焊接替代胶粘成主流",
+      "title_en": "Ultrasonic Over Glue",
+      "summary_zh": "环保与效率驱动下，更多企业转向焊接工艺。",
+      "summary_en": "Eco & efficiency push firms toward welding over glue."
+    },
+    {
+      "cat": "company",
+      "date": "2026-02-10",
+      "title_zh": "华仕达中英双语官网上线",
+      "title_en": "Bilingual Website Live",
+      "summary_zh": "全新官网支持中英切换，更好服务海外客户。",
+      "summary_en": "New bilingual site better serves overseas customers."
+    }
+  ]
+}

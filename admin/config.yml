@@ -1,0 +1,134 @@
+# ============================================================
+# Decap CMS 配置（华仕达智能机械官网）
+# 说明：
+#   1. backend 使用 GitHub。请先把本仓库推送到 GitHub，
+#      再将下面的 repo 改为 你的用户名/仓库名。
+#   2. 在非 Netlify 静态托管（如 CloudStudio / EdgeOne / GitHub Pages）
+#      上，GitHub 登录需要 OAuth 服务端；Netlify 自带该代理，最省心。
+#      推荐：站点托管到 Netlify（从 GitHub 导入），/admin 即可直接登录。
+# ============================================================
+
+backend:
+  name: github
+  repo: YOUR_GITHUB_USERNAME/huashida-website   # ← 替换为你的 GitHub 仓库
+  branch: main
+
+locale: zh
+publish_mode: simple
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  # ---------------- 产品 ----------------
+  - name: "products"
+    label: "产品管理"
+    files:
+      - name: "products"
+        label: "产品列表"
+        file: "content/products.json"
+        format: json
+        fields:
+          - name: "items"
+            label: "产品"
+            widget: "list"
+            summary: "{{fields.name_zh}} / {{fields.name_en}}"
+            field:
+              - name: "cat"
+                label: "产品系列"
+                widget: "select"
+                options:
+                  - { label: "高周波机械", value: "hf" }
+                  - { label: "超声波设备", value: "ultrasonic" }
+                  - { label: "自动化设备", value: "auto" }
+                  - { label: "包装机械", value: "pack" }
+                  - { label: "模具系列", value: "mold" }
+              - { name: "name_zh", label: "名称（中文）", widget: "string" }
+              - { name: "name_en", label: "名称（英文）", widget: "string" }
+              - { name: "desc_zh", label: "描述（中文）", widget: "text" }
+              - { name: "desc_en", label: "描述（英文）", widget: "text" }
+              - name: "inquiry"
+                label: "询盘标识"
+                widget: "string"
+                hint: "格式：中文名 | English Name（用于产品页询盘弹窗）"
+
+  # ---------------- 新闻 ----------------
+  - name: "news"
+    label: "新闻管理"
+    files:
+      - name: "news"
+        label: "新闻列表"
+        file: "content/news.json"
+        format: json
+        fields:
+          - name: "items"
+            label: "新闻"
+            widget: "list"
+            summary: "{{fields.date}} · {{fields.title_zh}}"
+            field:
+              - name: "cat"
+                label: "分类"
+                widget: "select"
+                options:
+                  - { label: "企业动态", value: "company" }
+                  - { label: "行业趋势", value: "trend" }
+                  - { label: "新品发布", value: "new" }
+                  - { label: "展会信息", value: "expo" }
+              - { name: "date", label: "日期", widget: "date" }
+              - { name: "title_zh", label: "标题（中文）", widget: "string" }
+              - { name: "title_en", label: "标题（英文）", widget: "string" }
+              - { name: "summary_zh", label: "摘要（中文）", widget: "text" }
+              - { name: "summary_en", label: "摘要（英文）", widget: "text" }
+
+  # ---------------- 案例 ----------------
+  - name: "cases"
+    label: "案例管理"
+    files:
+      - name: "cases"
+        label: "案例列表"
+        file: "content/cases.json"
+        format: json
+        fields:
+          - name: "items"
+            label: "案例"
+            widget: "list"
+            summary: "{{fields.title_zh}}"
+            field:
+              - name: "ind"
+                label: "行业"
+                widget: "select"
+                options:
+                  - { label: "塑胶", value: "plastic" }
+                  - { label: "玩具", value: "toy" }
+                  - { label: "电器", value: "appliance" }
+                  - { label: "电子", value: "electronic" }
+                  - { label: "五金", value: "hardware" }
+                  - { label: "印刷", value: "print" }
+              - { name: "ind_zh", label: "行业名（中文）", widget: "string", hint: "如：塑胶行业" }
+              - { name: "ind_en", label: "行业名（英文）", widget: "string", hint: "如：Plastics" }
+              - { name: "title_zh", label: "案例标题（中文）", widget: "string" }
+              - { name: "title_en", label: "案例标题（英文）", widget: "string" }
+              - { name: "bg_zh", label: "客户背景（中文）", widget: "text" }
+              - { name: "bg_en", label: "客户背景（英文）", widget: "text" }
+              - { name: "sol_zh", label: "解决方案（中文）", widget: "text" }
+              - { name: "sol_en", label: "解决方案（英文）", widget: "text" }
+              - { name: "res_zh", label: "实施效果（中文）", widget: "text" }
+              - { name: "res_en", label: "实施效果（英文）", widget: "text" }
+
+  # ---------------- 站点设置 ----------------
+  - name: "settings"
+    label: "站点设置"
+    files:
+      - name: "settings"
+        label: "联系方式 / 公司信息"
+        file: "content/settings.json"
+        format: json
+        fields:
+          - { name: "company_zh", label: "公司名（中文）", widget: "string" }
+          - { name: "company_en", label: "公司名（英文）", widget: "string" }
+          - { name: "phone_luo", label: "罗先生电话", widget: "string" }
+          - { name: "phone_sun", label: "孙小姐电话", widget: "string" }
+          - { name: "email", label: "邮箱", widget: "string" }
+          - { name: "address_zh", label: "地址（中文）", widget: "string" }
+          - { name: "address_en", label: "地址（英文）", widget: "string" }
+          - { name: "wechat_id", label: "微信号", widget: "string" }

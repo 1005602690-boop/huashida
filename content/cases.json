@@ -1,0 +1,82 @@
+{
+  "items": [
+    {
+      "ind": "plastic",
+      "ind_zh": "塑胶行业",
+      "ind_en": "Plastics",
+      "title_zh": "吸塑包装高周波熔接线",
+      "title_en": "Blister Welding Line",
+      "bg_zh": "日用品吸塑厂，需提升泡壳包装封口效率。",
+      "bg_en": "Blister plant needing faster sealing efficiency.",
+      "sol_zh": "部署多工位高周波吸塑包装机 + 定制模具。",
+      "sol_en": "Multi-station blister packer + custom molds.",
+      "res_zh": "封口效率提升约 40%，不良率明显下降。",
+      "res_en": "~40% faster sealing, lower defect rate."
+    },
+    {
+      "ind": "electronic",
+      "ind_zh": "电子行业",
+      "ind_en": "Electronics",
+      "title_zh": "电子外壳超声波焊接",
+      "title_en": "Enclosure Welding",
+      "bg_zh": "消费电子厂商，对外壳密封与外观要求高。",
+      "bg_en": "Consumer electronics — high seal & finish needs.",
+      "sol_zh": "超声波塑料焊接机 + 专用焊头，参数精准管控。",
+      "sol_en": "Ultrasonic welder + dedicated horn, precise params.",
+      "res_zh": "焊缝均匀美观，产品良品率显著提升。",
+      "res_en": "Even seams, notably higher yield."
+    },
+    {
+      "ind": "toy",
+      "ind_zh": "玩具行业",
+      "ind_en": "Toys",
+      "title_zh": "软胶玩具高周波压花",
+      "title_en": "Soft Toy Embossing",
+      "bg_zh": "玩具厂需实现复杂图案压花且批量一致。",
+      "bg_en": "Toy maker needing consistent complex embossing.",
+      "sol_zh": "定制高周波模具，一机多用快速换模。",
+      "sol_en": "Custom HF molds, fast multi-pattern changeover.",
+      "res_zh": "图案清晰一致，换款时间大幅缩短。",
+      "res_en": "Clear, consistent patterns; faster changeover."
+    },
+    {
+      "ind": "appliance",
+      "ind_zh": "电器行业",
+      "ind_en": "Appliances",
+      "title_zh": "家电配件熔接组装",
+      "title_en": "Appliance Assembly",
+      "bg_zh": "小家电厂需将多片塑胶配件牢固接合。",
+      "bg_en": "Appliance maker joining multiple plastic parts.",
+      "sol_zh": "高周波 + 超声波组合工艺，配套定位工装。",
+      "sol_en": "HF + ultrasonic process with fixtures.",
+      "res_zh": "接合强度高，无需胶水更环保。",
+      "res_en": "Strong joints, glue-free & greener."
+    },
+    {
+      "ind": "hardware",
+      "ind_zh": "五金行业",
+      "ind_en": "Hardware",
+      "title_zh": "PVC 铭牌高周波压印",
+      "title_en": "PVC Nameplate",
+      "bg_zh": "五金工具厂需批量制作耐磨损标识铭牌。",
+      "bg_en": "Tool maker needing durable batch nameplates.",
+      "sol_zh": "高周波压印机 + 铜模，一次成型。",
+      "sol_en": "HF press + copper mold, one-shot forming.",
+      "res_zh": "标识清晰耐磨，单件成本降低。",
+      "res_en": "Clear, wear-resistant marks; lower cost."
+    },
+    {
+      "ind": "print",
+      "ind_zh": "印刷行业",
+      "ind_en": "Printing",
+      "title_zh": "包装封套热压成型",
+      "title_en": "Pack Sleeve Forming",
+      "bg_zh": "印刷包装厂需对封套进行热压封口。",
+      "bg_en": "Print pack plant needing heat-sealed sleeves.",
+      "sol_zh": "热压封口机 + 自动送料，适配多规格。",
+      "sol_en": "Heat sealer + auto feed, multi-spec ready.",
+      "res_zh": "封口整齐美观，产线自动化程度提升。",
+      "res_en": "Neat seals, higher line automation."
+    }
+  ]
+}
