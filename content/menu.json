@@ -1,0 +1,11 @@
+{
+  "items": [
+    { "label_zh": "首页", "label_en": "Home", "url": "index.html" },
+    { "label_zh": "关于我们", "label_en": "About", "url": "about.html" },
+    { "label_zh": "产品中心", "label_en": "Products", "url": "products.html" },
+    { "label_zh": "解决方案", "label_en": "Solutions", "url": "solutions.html" },
+    { "label_zh": "技术资料", "label_en": "Resources", "url": "resources.html" },
+    { "label_zh": "新闻资讯", "label_en": "News", "url": "news.html" },
+    { "label_zh": "联系我们", "label_en": "Contact", "url": "contact.html" }
+  ]
+}

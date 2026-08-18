@@ -6,6 +6,8 @@
 #   2. 在非 Netlify 静态托管（如 CloudStudio / EdgeOne / GitHub Pages）
 #      上，GitHub 登录需要 OAuth 服务端；Netlify 自带该代理，最省心。
 #      推荐：站点托管到 Netlify（从 GitHub 导入），/admin 即可直接登录。
+#   3. 「媒体库」可上传图片与视频到 assets/uploads/，供图片/视频字段选用。
+#   4. 「菜单管理」编辑顶部导航；「页面管理」可新增/编辑独立网页（支持插图、插视频）。
 # ============================================================
 
 backend:
@@ -16,8 +18,14 @@ backend:
 locale: zh
 publish_mode: simple
 
-media_folder: "assets/images"
-public_folder: "/assets/images"
+# 媒体库：图片与视频统一上传到 assets/uploads/（对应线上 /assets/uploads）
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+media_library:
+  folders:
+    - name: "images"
+      path: "assets/uploads"
+      default: true
 
 collections:
   # ---------------- 产品 ----------------
@@ -45,6 +53,16 @@ collections:
                   - { label: "模具系列", value: "mold" }
               - { name: "name_zh", label: "名称（中文）", widget: "string" }
               - { name: "name_en", label: "名称（英文）", widget: "string" }
+              - name: "image"
+                label: "产品图片（可选，留空用系列默认图）"
+                widget: "image"
+                required: false
+                hint: "从媒体库选择或上传；不填则使用对应系列的默认实景图。"
+              - name: "video"
+                label: "产品视频（可选）"
+                widget: "file"
+                required: false
+                hint: "可上传 mp4 等短视频，留空则不显示。"
               - { name: "desc_zh", label: "描述（中文）", widget: "text" }
               - { name: "desc_en", label: "描述（英文）", widget: "text" }
               - name: "inquiry"
@@ -79,6 +97,10 @@ collections:
               - { name: "title_en", label: "标题（英文）", widget: "string" }
               - { name: "summary_zh", label: "摘要（中文）", widget: "text" }
               - { name: "summary_en", label: "摘要（英文）", widget: "text" }
+              - name: "image"
+                label: "封面图（可选）"
+                widget: "image"
+                required: false
 
   # ---------------- 案例 ----------------
   - name: "cases"
@@ -108,12 +130,56 @@ collections:
               - { name: "ind_en", label: "行业名（英文）", widget: "string", hint: "如：Plastics" }
               - { name: "title_zh", label: "案例标题（中文）", widget: "string" }
               - { name: "title_en", label: "案例标题（英文）", widget: "string" }
+              - name: "image"
+                label: "现场图（可选）"
+                widget: "image"
+                required: false
+              - name: "video"
+                label: "现场视频（可选）"
+                widget: "file"
+                required: false
               - { name: "bg_zh", label: "客户背景（中文）", widget: "text" }
               - { name: "bg_en", label: "客户背景（英文）", widget: "text" }
               - { name: "sol_zh", label: "解决方案（中文）", widget: "text" }
               - { name: "sol_en", label: "解决方案（英文）", widget: "text" }
               - { name: "res_zh", label: "实施效果（中文）", widget: "text" }
               - { name: "res_en", label: "实施效果（英文）", widget: "text" }
+
+  # ---------------- 菜单 ----------------
+  - name: "menu"
+    label: "菜单管理"
+    files:
+      - name: "menu"
+        label: "顶部导航"
+        file: "content/menu.json"
+        format: json
+        fields:
+          - name: "items"
+            label: "导航项（按顺序拖动调整）"
+            widget: "list"
+            summary: "{{fields.label_zh}}"
+            field:
+              - { name: "label_zh", label: "名称（中文）", widget: "string" }
+              - { name: "label_en", label: "名称（英文）", widget: "string" }
+              - name: "url"
+                label: "链接地址"
+                widget: "string"
+                hint: "站内页面如 index.html、products.html；新增的独立页用 page.html?p=页面文件名（不含.md）"
+
+  # ---------------- 页面（可新增网页） ----------------
+  - name: "pages"
+    label: "页面管理"
+    folder: "content/pages"
+    slug: "{{slug}}"
+    format: yaml-front-matter
+    create: true
+    fields:
+      - { name: "title_zh", label: "标题（中文）", widget: "string" }
+      - { name: "title_en", label: "标题（英文）", widget: "string" }
+      - name: "body"
+        label: "正文（支持插图片/视频、标题、列表、加粗）"
+        widget: "markdown"
+        hint: "使用工具栏可插入媒体库中的图片与视频；支持 # 标题、**加粗**、- 列表、[链接](url)。"
 
   # ---------------- 站点设置 ----------------
   - name: "settings"
