@@ -14,7 +14,6 @@ backend:
   name: github
   repo: 1005602690-boop/huashida
   branch: master
-  base_url: https://huashida.netlify.app
 
 locale: zh
 publish_mode: simple
