@@ -12,8 +12,8 @@
 
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/huashida-website   # ← 替换为你的 GitHub 仓库
-  branch: main
+  repo: 1005602690-boop/huashida
+  branch: master
 
 locale: zh
 publish_mode: simple
