@@ -195,3 +195,8 @@ collections:
           - { name: "address_zh", label: "地址（中文）", widget: "string" }
           - { name: "address_en", label: "地址（英文）", widget: "string" }
           - { name: "wechat_id", label: "微信号", widget: "string" }
+          - name: "hero_image"
+            label: "主页大图（Hero，留空用默认图）"
+            widget: "image"
+            required: false
+            hint: "建议尺寸约 800×600，上传整机/车间/案例实景图；留空则用系统默认图。"
