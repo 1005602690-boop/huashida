@@ -140,6 +140,34 @@
     }).join('');
   }
 
+  /* ---------- 主页大图（来自 settings.hero_image） ---------- */
+  function renderHeroImage(s) {
+    if (!s) return;
+    var img = $('#heroImg');
+    if (img && s.hero_image) img.src = s.hero_image;
+  }
+
+  /* ---------- 主页案例卡片（来自 cases.json，前 3 条） ---------- */
+  function renderHomeCases(items) {
+    var grid = $('#homeCaseGrid');
+    if (!grid) return;
+    var list = (items || []).slice(0, 3);
+    if (!list.length) { grid.innerHTML = ''; return; }
+    grid.innerHTML = list.map(function (c) {
+      var ind = IND[c.ind] || { zh: c.ind_zh || c.ind, en: c.ind_en || c.ind };
+      var thumb = c.image
+        ? '<div class="case-card__thumb" style="background-image:url(\'' + esc(c.image) + '\');background-size:cover;background-position:center"></div>'
+        : '<div class="case-card__thumb"><svg viewBox="0 0 320 200" preserveAspectRatio="none"><rect width="320" height="200" fill="#0d3a63"/><rect x="40" y="60" width="240" height="90" rx="8" fill="#1f9bff" opacity=".3"/><circle cx="160" cy="105" r="30" fill="#00c2d6"/></svg></div>';
+      return '<div class="case-card">'
+        + thumb
+        + '<div class="case-card__body">'
+        + '<span class="ind"><span data-zh>' + esc(ind.zh) + '</span><span data-en>' + esc(ind.en) + '</span></span>'
+        + '<h3><span data-zh>' + esc(c.title_zh) + '</span><span data-en>' + esc(c.title_en) + '</span></h3>'
+        + '<p><span data-zh>' + esc(c.bg_zh || '') + '</span><span data-en>' + esc(c.bg_en || '') + '</span></p>'
+        + '</div></div>';
+    }).join('');
+  }
+
   /* ---------- 设置：页脚与联系信息 ---------- */
   var IC_LOC = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>';
   var IC_TEL = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.8 19.8 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>';
@@ -252,6 +280,7 @@
     fetchJSON('content/settings.json').then(function (s) {
       renderFooterContact(s);
       renderContactInfo(s);
+      renderHeroImage(s);
     }).catch(function (e) { console.warn('[cms] settings 加载失败', e); });
 
     fetchJSON('content/menu.json').then(function (m) {
@@ -266,10 +295,10 @@
       fetchJSON('content/news.json').then(function (d) { renderNews(d.items); })
         .catch(function (e) { console.warn('[cms] news 加载失败', e); });
     }
-    if ($('#solGrid')) {
-      fetchJSON('content/cases.json').then(function (d) { renderCases(d.items); })
-        .catch(function (e) { console.warn('[cms] cases 加载失败', e); });
-    }
+    fetchJSON('content/cases.json').then(function (d) {
+      if ($('#solGrid')) renderCases(d.items);
+      if ($('#homeCaseGrid')) renderHomeCases(d.items);
+    }).catch(function (e) { console.warn('[cms] cases 加载失败', e); });
     if ($('#pageContent')) {
       renderPage();
     }
