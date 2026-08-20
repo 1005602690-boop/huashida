@@ -1,13 +1,13 @@
 {
-  "company_zh": "华仕达智能机械设备",
-  "company_en": "HUASHIDA MACHINERY",
-  "phone_luo": "134 1210 9295",
-  "phone_sun": "186 9260 6891",
-  "email": "huashida168@foxmail.com",
-  "address_zh": "广东省东莞市凤岗镇风清路7号1号108室",
-  "address_en": "Room 108, Bldg 1, No.7 Fengqing Rd, Fenggang Town, Dongguan, Guangdong",
-  "map_keyword_zh": "广东省东莞市凤岗镇风清路7号1号108室",
   "map_keyword_en": "Room 108, No.7 Fengqing Rd, Fenggang, Dongguan, Guangdong",
+  "map_keyword_zh": "广东省东莞市凤岗镇风清路7号1号108室",
+  "company_en": "HUASHIDA MACHINERY",
+  "company_zh": "华仕达智能机械设备",
   "wechat_id": "huashida168",
-  "hero_image": "assets/images/hero-machine.png"
+  "address_en": "Room 108, Bldg 1, No.7 Fengqing Rd, Fenggang Town, Dongguan, Guangdong",
+  "phone_luo": "134 1210 9295",
+  "hero_image": "/assets/uploads/2.jpg",
+  "address_zh": "广东省东莞市凤岗镇风清路7号1号108室",
+  "phone_sun": "186 9260 6891",
+  "email": "huashida168@foxmail.com"
 }
