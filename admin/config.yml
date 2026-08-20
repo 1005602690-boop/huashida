@@ -22,10 +22,7 @@ publish_mode: simple
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 media_library:
-  folders:
-    - name: "images"
-      path: "assets/uploads"
-      default: true
+  name: uploadcare
 
 collections:
   # ---------------- 产品 ----------------
@@ -41,7 +38,7 @@ collections:
             label: "产品"
             widget: "list"
             summary: "{{fields.name_zh}} / {{fields.name_en}}"
-            field:
+            fields:
               - name: "cat"
                 label: "产品系列"
                 widget: "select"
@@ -83,7 +80,7 @@ collections:
             label: "新闻"
             widget: "list"
             summary: "{{fields.date}} · {{fields.title_zh}}"
-            field:
+            fields:
               - name: "cat"
                 label: "分类"
                 widget: "select"
@@ -115,7 +112,7 @@ collections:
             label: "案例"
             widget: "list"
             summary: "{{fields.title_zh}}"
-            field:
+            fields:
               - name: "ind"
                 label: "行业"
                 widget: "select"
@@ -158,7 +155,7 @@ collections:
             label: "导航项（按顺序拖动调整）"
             widget: "list"
             summary: "{{fields.label_zh}}"
-            field:
+            fields:
               - { name: "label_zh", label: "名称（中文）", widget: "string" }
               - { name: "label_en", label: "名称（英文）", widget: "string" }
               - name: "url"
