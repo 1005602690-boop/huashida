@@ -147,6 +147,26 @@
     if (img && s.hero_image) img.src = s.hero_image;
   }
 
+  /* ---------- 分类卡片背景图（来自 settings.cat_images / cat_img_*） ---------- */
+  function renderCatImages(s) {
+    if (!s) return;
+    // 支持两种格式：cat_images 对象 或 cat_img_* 扁平字段
+    var map = s.cat_images || {};
+    map.hf   = s.cat_img_hf   || (map.hf || '');
+    map.ultrasonic = s.cat_img_ultrasonic || (map.ultrasonic || '');
+    map.auto = s.cat_img_auto || (map.auto || '');
+    map.pack = s.cat_img_pack || (map.pack || '');
+    map.mold = s.cat_img_mold || (map.mold || '');
+
+    $$('.cat-card[data-cat]').forEach(function (card) {
+      var cat = card.getAttribute('data-cat');
+      var url = map[cat];
+      if (!url) return;
+      var bg = card.querySelector('.cat-card__bg');
+      if (bg) bg.style.backgroundImage = "url('" + esc(url) + "')";
+    });
+  }
+
   /* ---------- 主页案例卡片（来自 cases.json，前 3 条） ---------- */
   function renderHomeCases(items) {
     var grid = $('#homeCaseGrid');
@@ -281,6 +301,7 @@
       renderFooterContact(s);
       renderContactInfo(s);
       renderHeroImage(s);
+      renderCatImages(s);
     }).catch(function (e) { console.warn('[cms] settings 加载失败', e); });
 
     fetchJSON('content/menu.json').then(function (m) {

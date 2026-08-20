@@ -200,3 +200,24 @@ collections:
             widget: "image"
             required: false
             hint: "建议尺寸约 800×600，上传整机/车间/案例实景图；留空则用系统默认图。"
+          - name: "cat_img_hf"
+            label: "分类卡片图：高周波机械"
+            widget: "image"
+            required: false
+            hint: "首页产品分类卡片背景图，建议横图。"
+          - name: "cat_img_ultrasonic"
+            label: "分类卡片图：超声波设备"
+            widget: "image"
+            required: false
+          - name: "cat_img_auto"
+            label: "分类卡片图：自动化设备"
+            widget: "image"
+            required: false
+          - name: "cat_img_pack"
+            label: "分类卡片图：包装机械"
+            widget: "image"
+            required: false
+          - name: "cat_img_mold"
+            label: "分类卡片图：模具系列"
+            widget: "image"
+            required: false
