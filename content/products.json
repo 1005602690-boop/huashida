@@ -2,103 +2,183 @@
   "items": [
     {
       "cat": "hf",
-      "name_zh": "高周波熔接机",
-      "name_en": "HF Welding Machine",
-      "desc_zh": "高周波塑胶熔接机，用于 PVC、皮革、吸塑等材料熔接压花，出力稳定、能耗低，爱采购热销机型。",
-      "desc_en": "HF plastic welder for PVC/leather/blister embossing — stable output, low energy; a best-seller on AiProcurement.",
-      "inquiry": "高周波熔接机 | HF Welding Machine",
-      "image": "/assets/uploads/11.png"
+      "name_zh": "高周波膜结构篷布焊接机",
+      "name_en": "HF PVC Tarp Welding Machine",
+      "desc_zh": "高频 PVC 热合机，专用于膜结构篷布、帆布大跨度连续焊接，焊缝牢固不漏水，F2 帆布机型可定制。",
+      "desc_en": "HF PVC welder for membrane tarps & large-span canvas — strong, leak-proof seams; F2 model customizable.",
+      "price": "¥15000",
+      "inquiry": "高周波膜结构篷布焊接机 | HF PVC Tarp Welding Machine"
     },
     {
       "cat": "hf",
-      "name_zh": "帆布焊接机",
-      "name_en": "Canvas Welder",
-      "desc_zh": "高周波帆布焊接机，专用于篷布、泳池罩、防水布、广告布等大尺寸连续焊接，焊缝牢固不漏水。",
-      "desc_en": "HF canvas welder for tarps, pool covers & large waterproof fabrics — strong, leak-proof seams.",
-      "inquiry": "帆布焊接机 | Canvas Welder",
-      "image": "/assets/uploads/12.jpg"
+      "name_zh": "脚踩式单头高周波电压机",
+      "name_en": "Foot-operated Single-head HF Welder",
+      "desc_zh": "小型高周波电压机，脚踩式单头操作，带上下高频，适合 PVC 脚套、皮筋等小件焊接压合。",
+      "desc_en": "Compact foot-pedal single-head HF welder for PVC gaiters, elastic bands & small parts.",
+      "price": "¥18800",
+      "inquiry": "脚踩式单头高周波电压机 | Foot-operated Single-head HF Welder"
+    },
+    {
+      "cat": "hf",
+      "name_zh": "全自动高周波制袋机",
+      "name_en": "Auto HF Bag Making Machine",
+      "desc_zh": "高频自动拉料、焊接、裁切一体机，适用于 PVC 多层袋连续生产，省人工、效率高。",
+      "desc_en": "Auto HF feed-weld-cut machine for PVC multi-layer bags — labor-saving, high throughput.",
+      "price": "¥1000",
+      "inquiry": "全自动高周波制袋机 | Auto HF Bag Making Machine"
+    },
+    {
+      "cat": "hf",
+      "name_zh": "全自动高周波拉料焊接机",
+      "name_en": "Auto HF Feed Welding Machine",
+      "desc_zh": "多层错位 PVC 袋、卡套封边熔接设备，全自动拉料定位，适合批量卡套、包装袋生产。",
+      "desc_en": "Auto HF feed welder for multi-layer PVC bags & card holders — precise positioning, volume runs.",
+      "price": "¥80000",
+      "inquiry": "全自动高周波拉料焊接机 | Auto HF Feed Welding Machine"
     },
     {
       "cat": "hf",
       "name_zh": "高周波熔断机",
-      "name_en": "HF Cutting Machine",
-      "desc_zh": "高周波自动圆盘熔断机，熔接同时同步切断，适合文具、包装、皮具等异形裁切，批量生产更高效。",
-      "desc_en": "Auto rotary HF cutting machine — weld & cut in one, ideal for stationery, packaging & leather shapes.",
-      "inquiry": "高周波熔断机 | HF Cutting Machine",
-      "image": "/assets/uploads/1.jpg"
-    },
-    {
-      "cat": "hf",
-      "name_zh": "吸塑包装封口机",
-      "name_en": "Blister Sealer",
-      "desc_zh": "吸塑包装封口机，适用于日用品、电子、五金、食品等吸塑泡壳热压封口，封口平整、良率高。",
-      "desc_en": "Blister sealer for goods, electronics, hardware & food — neat seals, high yield.",
-      "inquiry": "吸塑包装机 | Blister Packer",
-      "image": "/assets/uploads/11.jpg"
+      "name_en": "HF Cutting & Welding Machine",
+      "desc_zh": "GAG/PETG 双面吸塑包装封口机，PU 皮革耳机套熔接裁断一体，熔接同时同步切断。",
+      "desc_en": "HF cutter & welder for GAG/PETG blister & PU earpads — weld and cut in one pass.",
+      "price": "¥48800",
+      "inquiry": "高周波熔断机 | HF Cutting & Welding Machine"
     },
     {
       "cat": "ultrasonic",
-      "name_zh": "超声波塑料焊接机",
-      "name_en": "Ultrasonic Plastic Welder",
-      "desc_zh": "超声波塑焊机，用于 ABS、PP、PVC 等塑胶件精密焊接，免胶水、无污染，焊接强度高。",
-      "desc_en": "Ultrasonic plastic welder for ABS/PP/PVC — glue-free, clean, high-strength joints.",
-      "inquiry": "超声波塑料焊接机 | Ultrasonic Plastic Welder"
+      "name_zh": "PSA评级卡盒超音波封边机",
+      "name_en": "Ultrasonic Card Box Sealing Machine",
+      "desc_zh": "球星卡、游戏王 ABS 塑料盒超声波封边设备，封边平整牢固，无胶水更环保。",
+      "desc_en": "Ultrasonic sealer for PSA grading card boxes (sports/TCG) — clean, glue-free edges.",
+      "price": "¥6580",
+      "inquiry": "PSA评级卡盒超音波封边机 | Ultrasonic Card Box Sealing Machine"
     },
     {
       "cat": "ultrasonic",
-      "name_zh": "超声波点焊机",
-      "name_en": "Ultrasonic Spot Welder",
-      "desc_zh": "手持式超声波点焊机，适合汽车内饰、无纺布、服饰压花等局部焊接，轻便灵活。",
-      "desc_en": "Handheld ultrasonic spot welder for auto interiors, non-woven & lace embossing — light & flexible.",
-      "inquiry": "超声波点焊机 | Ultrasonic Spot Welder"
+      "name_zh": "PSA评级卡盒超声波焊接机",
+      "name_en": "Ultrasonic Grading Card Box Welder",
+      "desc_zh": "球星卡、游戏王 MTG 分级塑料盒超声波焊接机，超音波封边，焊接强度高、外观美观。",
+      "desc_en": "Ultrasonic welder for MTG/TCG grading boxes — high-strength, neat welds.",
+      "price": "¥6580",
+      "inquiry": "PSA评级卡盒超声波焊接机 | Ultrasonic Grading Card Box Welder"
+    },
+    {
+      "cat": "ultrasonic",
+      "name_zh": "全自动超声波呼吸阀焊接机",
+      "name_en": "Auto Ultrasonic Respirator Valve Welder",
+      "desc_zh": "3M 方形呼吸阀焊接机，振动盘自动上料，半自动杯型口罩机，超声波焊接阀盖高效稳定。",
+      "desc_en": "Auto ultrasonic welder for 3M respirator valves & cup masks — vibratory feeder, steady output.",
+      "price": "¥26000",
+      "inquiry": "全自动超声波呼吸阀焊接机 | Auto Ultrasonic Respirator Valve Welder"
     },
     {
       "cat": "auto",
-      "name_zh": "全自动制袋机",
-      "name_en": "Auto Bag Maker",
-      "desc_zh": "全自动制袋机（含全自动 PVC/PET 圆筒成型机），软包装袋高速成型，多规格快速切换，省人工。",
-      "desc_en": "Auto bag maker incl. PVC/PET tube forming — high-speed, multi-spec, labor-saving.",
-      "inquiry": "全自动制袋机 | Auto Bag Maker"
+      "name_zh": "12T液压摆臂裁断机",
+      "name_en": "12T Hydraulic Swing Arm Cutting Machine",
+      "desc_zh": "皮革、口罩、服装、布料摇臂式下料机，12 吨液压摆臂，裁断精准、操作省力。",
+      "desc_en": "12T hydraulic swing-arm clicker for leather, masks, garments & fabric — precise, effortless cutting.",
+      "price": "¥3500",
+      "inquiry": "12T液压摆臂裁断机 | 12T Hydraulic Swing Arm Cutting Machine"
     },
     {
       "cat": "auto",
-      "name_zh": "自动门帘机",
-      "name_en": "Auto Door/Curtain Machine",
-      "desc_zh": "自动门帘机，用于 PVC 软门帘、磁吸门帘的焊接与裁切成型，连续作业稳定。",
-      "desc_en": "Auto strip-curtain machine for welding & cutting PVC doors — steady continuous run.",
-      "inquiry": "自动门帘机 | Auto Door Machine"
+      "name_zh": "棉签刷子静电植绒机流水线",
+      "name_en": "Swab Static Flocking Production Line",
+      "desc_zh": "棉签、刷子、鼻咽拭子检测棒静电植绒机与甩胶机流水线设备，一站式植绒生产。",
+      "desc_en": "Static flocking & glue-line equipment for swabs/brushes — turnkey flocking production.",
+      "price": "¥16000",
+      "inquiry": "棉签刷子静电植绒机流水线 | Swab Static Flocking Production Line"
     },
     {
       "cat": "pack",
-      "name_zh": "热压封口机",
-      "name_en": "Heat Sealer",
-      "desc_zh": "高频热压机（含桌面式小型热压机），用于软包装、礼品盒、皮革压合封口，压力均匀、密封牢固。",
-      "desc_en": "HF heat presser incl. bench-top model — even pressure, firm seals for packaging & leather.",
-      "inquiry": "热压封口机 | Heat Sealer"
+      "name_zh": "气动桌面式吸塑冲孔机",
+      "name_en": "Pneumatic Desktop Blister Punching Machine",
+      "desc_zh": "PVC/PET 泡壳冲飞机孔设备，小型冲切机，气动桌面式，适合吊卡冲孔与定位孔加工。",
+      "desc_en": "Pneumatic desktop blister puncher for PVC/PET — pilot & positioning holes.",
+      "price": "¥1580",
+      "inquiry": "气动桌面式吸塑冲孔机 | Pneumatic Desktop Blister Punching Machine"
+    },
+    {
+      "cat": "pack",
+      "name_zh": "桌面式小型热压机",
+      "name_en": "Desktop Heat Press / Hot Melting Machine",
+      "desc_zh": "源头工厂桌面式小型热压机，手机皮套气动式热合设备，塑胶热熔机，压力均匀封合牢固。",
+      "desc_en": "Desktop heat press / plastic hot-melter for phone cases — even pressure, firm bonds.",
+      "price": "¥3280",
+      "inquiry": "桌面式小型热压机 | Desktop Heat Press Machine"
+    },
+    {
+      "cat": "pack",
+      "name_zh": "双工位定位吸塑成型包装机",
+      "name_en": "Dual-station Blister Forming Machine",
+      "desc_zh": "3D 贴纸印刷胶片真空成型机，吸塑打板机，双工位定位，成型精度高。",
+      "desc_en": "Dual-station vacuum forming & blister prototyping machine — high forming accuracy.",
+      "price": "¥29800",
+      "inquiry": "双工位定位吸塑成型包装机 | Dual-station Blister Forming Machine"
+    },
+    {
+      "cat": "pack",
+      "name_zh": "迷你桌面式吸塑纸卡热合机",
+      "name_en": "Mini Desktop Blister Card Welder",
+      "desc_zh": "PVC 泡壳吊卡包装设备，2 工位小吸塑封口机，桌面式小巧，适合小批量吊卡包装。",
+      "desc_en": "Mini 2-station blister card sealer — compact for small-batch carded packaging.",
+      "price": "¥3680",
+      "inquiry": "迷你桌面式吸塑纸卡热合机 | Mini Desktop Blister Card Welder"
+    },
+    {
+      "cat": "pack",
+      "name_zh": "手动转盘圆盘三工位吸塑热压封口机",
+      "name_en": "Manual 3-station Rotary Blister Sealer",
+      "desc_zh": "PVC 泡壳纸卡玩具包装机，电木模三工位转盘，手动操作，适合多品种小批量。",
+      "desc_en": "Manual 3-station rotary blister sealer with bakelite mold — for toys & carded goods.",
+      "price": "¥1000",
+      "inquiry": "手动转盘圆盘三工位吸塑热压封口机 | Manual 3-station Rotary Blister Sealer"
     },
     {
       "cat": "mold",
-      "name_zh": "高周波模具",
-      "name_en": "HF Mold",
-      "desc_zh": "高周波模具，按产品图纸定制铜模/铝模，精度高、寿命长，与设备配套交付。",
-      "desc_en": "HF molds — custom copper/aluminum tooling, precise & durable, matched to your machine.",
+      "name_zh": "高周波模具 吸塑封口电木模具",
+      "name_en": "HF Mold / Bakelite Embossing Tool",
+      "desc_zh": "吸塑封口、泡壳包装用高周波热压电木模具，高频铝合金材质，可按图纸定制。",
+      "desc_en": "Custom HF bakelite/aluminum mold for blister sealing & packaging embossing.",
+      "price": "¥400",
       "inquiry": "高周波模具 | HF Mold"
     },
     {
       "cat": "mold",
-      "name_zh": "超声波模具（焊头）",
-      "name_en": "Ultrasonic Horn",
-      "desc_zh": "超声波焊头（模具），钛/铝合金定制，频率精准、振幅均匀，匹配不同焊接工艺。",
-      "desc_en": "Ultrasonic horns — titanium/aluminum, precise frequency & even amplitude for your process.",
-      "inquiry": "超声波焊头 | Ultrasonic Horn"
+      "name_zh": "防水袋焊底模具 高周波热合模具",
+      "name_en": "Waterproof Bag Bottom-weld HF Mold",
+      "desc_zh": "外卖包、户外钓鱼桶底模，高周波热合模具，焊底牢固、密封性好。",
+      "desc_en": "HF bottom-weld mold for waterproof bags & fishing buckets — firm, sealed seams.",
+      "price": "¥1000",
+      "inquiry": "防水袋焊底模具 | Waterproof Bag Bottom-weld HF Mold"
     },
     {
       "cat": "mold",
-      "name_zh": "电木模具",
-      "name_en": "Bakelite Mold",
-      "desc_zh": "电木模具，高周波配套耐热电木模，性能稳定、成本低，适合批量压合。",
-      "desc_en": "Bakelite molds for HF — heat-resistant, stable & cost-effective for volume runs.",
-      "inquiry": "电木模具 | Bakelite Mold"
+      "name_zh": "泡壳纸卡热合模具 吸塑电木模",
+      "name_en": "Blister Card Welding Mold / Bakelite Jig",
+      "desc_zh": "东莞凤岗泡壳纸卡热合模具，吸塑电木模，吸塑包装治具，可按样品开模。",
+      "desc_en": "Blister-card welding bakelite mold & jig — custom-made from your sample.",
+      "price": "¥250",
+      "inquiry": "泡壳纸卡热合模具 | Blister Card Welding Mold"
+    },
+    {
+      "cat": "mold",
+      "name_zh": "手机皮套高周波熔接同步熔断模",
+      "name_en": "Phone Case HF Sync-cut Mold",
+      "desc_zh": "手机皮套生产机械模具一站式服务，高周波熔接同步熔断模，高频热合模配套交付。",
+      "desc_en": "Phone-case HF sync-cut mold — one-stop tooling matched to your welder.",
+      "price": "¥500",
+      "inquiry": "手机皮套高周波熔接同步熔断模 | Phone Case HF Sync-cut Mold"
+    },
+    {
+      "cat": "mold",
+      "name_zh": "NL5557高灵敏火花保护器",
+      "name_en": "NL5557 HF Spark Protector",
+      "desc_zh": "现货代理 NL5557 高灵敏火花保护器，高频机配件高周波火花保护管，保护模具与机器。",
+      "desc_en": "NL5557 high-sensitivity spark protector — HF machine spare part protecting mold & unit.",
+      "price": "¥1280",
+      "inquiry": "NL5557高灵敏火花保护器 | NL5557 HF Spark Protector"
     }
   ]
 }
