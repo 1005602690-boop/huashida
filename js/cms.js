@@ -86,6 +86,7 @@
           + '<span class="cat-tag"><span data-zh>' + esc(c.zh) + '</span><span data-en>' + esc(c.en) + '</span></span>'
           + '<h3><span data-zh>' + esc(p.name_zh) + '</span><span data-en>' + esc(p.name_en) + '</span></h3>'
           + '<p><span data-zh>' + esc(p.desc_zh) + '</span><span data-en>' + esc(p.desc_en) + '</span></p>'
+          + (p.price ? '<div class="price"><span data-zh>' + esc(p.price) + ' 起</span><span data-en>from ' + esc(p.price) + '</span></div>' : '')
           + '<div class="actions">'
           + '<button class="btn btn--primary" data-inquiry="' + esc(inquiry) + '"><span data-zh>询价</span><span data-en>Quote</span></button>'
           + '<a class="btn btn--ghost" href="contact.html"><span data-zh>咨询</span><span data-en>Ask</span></a>'
